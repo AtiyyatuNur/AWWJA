@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awwja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="onboarding.css">
+</head>
+<body>
+
+  <div class="screen active" id="splash">
+    <div class="splash-image-container">
+      <img class="splash-img" src="splash.img.jpg" alt="Awwja Market Background" />
+      <img class="splash-inner-img" src="splash.inner.img.jpg" alt="Awwja Logo" />
+    </div>
+    <div class="splash-loader">
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+    </div>
+  </div>
+
+
+  <div class="screen slide-screen" id="slide-1">
+    <div class="slide-topbar">
+      <div style="width:32px"></div>
+      <button class="skip-btn" data-goto="enter-market">Skip</button>
+    </div>
+    <div class="slide-illustration">
+      <img src="second.img.jpg" alt="Your Market, Now In Your Pocket (Progress Dot 1)" />
+    </div>
+    <div class="slide-content">
+      <h1 class="slide-title">
+        <span class="dark-ash">Your Market,</span><br>
+        <span class="accent">Now In Your Pocket</span>
+      </h1>
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="screen slide-screen" id="slide-2">
+    <div class="slide-topbar">
+      <button class="back-btn" data-goto="slide-1">
+        <i class="fa fa-arrow-left"></i>
+      </button>
+      <button class="skip-btn" data-goto="enter-market">Skip</button>
+    </div>
+    <div class="slide-illustration">
+      <img src="third.img.jpg" alt="Name Your Price - Negotiate and close deals on your own terms (Progress Dot 2)" />
+    </div>
+    <div class="slide-content">
+      <h1 class="slide-title">
+        <span class="dark-ash">Name Your Price,</span><br>
+        <span class="accent">Negotiate and close deals on your own terms</span>
+      </h1>
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="screen slide-screen" id="slide-3">
+    <div class="slide-topbar">
+      <button class="back-btn" data-goto="slide-2">
+        <i class="fa fa-arrow-left"></i>
+      </button>
+      <button class="continue-top-btn" data-goto="enter-market">Continue</button>
+    </div>
+    <div class="slide-illustration">
+      <img src="fourth.img.jpg" alt="Verified Stalls - Shop from real sellers with real ratings and reviews (Progress Dot 3)" />
+    </div>
+    <div class="slide-content">
+      <h1 class="slide-title">
+        <span class="dark-ash">Verified Stalls</span><br>
+        <span class="accent">Shop from real sellers with real ratings and reviews. No funny business</span>
+      </h1>
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot active"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="screen" id="enter-market">
+    <img class="enter-bg-img" src="fifth.img.jpg" alt="Enter the Market" />
+
+
+   <div class="enter-topbar">
+      <button class="enter-back" data-goto="slide-3">
+      <i class="fa fa-arrow-left"></i>
+      </button>
+    </div>
+
+    <div class="enter-actions">
+       <button class="enter-btn" id="enter-btn">
+         Enter the Market →
+       </button>
+
+       <div class="terms-row">
+          <input type="checkbox" id="terms-check" />
+            <label for="terms-check">
+             I agree to Awwja's <a href="#">Terms and Conditions</a>
+          </label>
+        </div>
+
+       <p class="terms-error" id="terms-error">
+        Please agree to Terms and Conditions to continue
+       </p>
+    </div>
+  </div>
+  <script src="onboarding.js"></script> 
+</body>
+</html>

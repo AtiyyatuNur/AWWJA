@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Awwja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-header">
+        <div class="profile-avatar-wrap">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200" alt="User Profile Picture" class="profile-avatar">
+        </div>
+         <h2 class="profile-name">Tap to add your name</h2>
+        <p class="profile-email"></p>
+        <!-- <h2 class="profile-name">Omoshalewa Ajoke</h2>
+        <p class="profile-email">shalewa@example.com</p> -->
+    </div>
+
+    <div class="profile-links-section">
+        <a href="#" class="profile-link">
+            <i class="fa fa-user-circle"></i>
+            <span>Personal Information</span>
+            <i class="fa fa-chevron-right"></i>
+        </a>
+        <a href="#" class="profile-link">
+            <i class="fa fa-box"></i>
+            <span>My Orders</span>
+            <i class="fa fa-chevron-right"></i>
+        </a>
+        <a href="#" class="profile-link">
+            <i class="fa fa-wallet"></i>
+            <span>Payment Information</span>
+            <i class="fa fa-chevron-right"></i>
+        </a>
+        <a href="#" class="profile-link">
+            <i class="fa fa-shield-alt"></i>
+            <span>Password & Security</span>
+            <i class="fa fa-chevron-right"></i>
+        </a>
+
+        <button class="secondary-btn logout-btn">Logout</button>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="homepage.html" class="nav-item">
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fa fa-search"></i>
+            <span>Search</span>
+        </a>
+        <a href="#" class="nav-item nav-stall">
+            <div class="stall-icon"><i class="fa fa-store"></i></div>
+        </a>
+        <a href="cart.html" class="nav-item">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Cart</span>
+        </a>
+        <a href="profile.html" class="nav-item active">
+            <i class="fa fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav> 
+
+    <!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<!-- Personal Information Modal -->
+<div class="profile-modal" id="personalInfoModal">
+    <div class="modal-header">
+        <h3>Personal Information</h3>
+        <button class="modal-close" id="closePersonalModal"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+        <div class="avatar-upload-wrap">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200" alt="Profile" class="modal-avatar" id="modalAvatar">
+            <label class="avatar-edit-btn" for="avatarInput"><i class="fa fa-camera"></i></label>
+            <input type="file" id="avatarInput" accept="image/*" hidden>
+        </div>
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="inputName" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="inputEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="inputPhone" placeholder="e.g. 08012345678">
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input type="text" id="inputAddress" placeholder="Enter your address">
+        </div>
+        <button class="primary-btn save-btn" id="savePersonalInfo">Save Changes</button>
+    </div>
+</div>
+
+
+<!-- My Orders Modal -->
+<div class="profile-modal" id="ordersModal">
+    <div class="modal-header">
+        <h3>My Orders</h3>
+        <button class="modal-close" id="closeOrdersModal"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="modal-body" id="ordersList">
+        <!-- Orders injected here -->
+    </div>
+</div>
+
+<!-- Password & Security Modal -->
+<div class="profile-modal" id="passwordModal">
+    <div class="modal-header">
+        <h3>Password & Security</h3>
+        <button class="modal-close" id="closePasswordModal"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>Current Password</label>
+            <div class="password-wrap">
+                <input type="password" id="currentPassword" placeholder="Enter current password">
+                <i class="fa fa-eye toggle-eye" data-target="currentPassword"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>New Password</label>
+            <div class="password-wrap">
+                <input type="password" id="newPassword" placeholder="Enter new password">
+                <i class="fa fa-eye toggle-eye" data-target="newPassword"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Confirm New Password</label>
+            <div class="password-wrap">
+                <input type="password" id="confirmPassword" placeholder="Confirm new password">
+                <i class="fa fa-eye toggle-eye" data-target="confirmPassword"></i>
+            </div>
+        </div>
+          <button class="primary-btn save-btn" id="savePassword">Update Password</button>
+        </div> 
+    </div>
+</div>
+    <script src="profile.js"></script>
+</body>
+</html>

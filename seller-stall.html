@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Stall - Awwja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="seller-stall.css">
+</head>
+<body>
+  <div class="stall-topnav">
+    <button class="back-btn" id="nav-back">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <span class="stall-topnav-title">SELLER'S STALL</span>
+    <button class="icon-btn"><i class="fa fa-share-alt"></i></button>
+  </div>
+
+  <!-- COVER IMAGE -->
+  <div class="cover-wrap">
+    <img class="cover-img"
+      src="https://media.istockphoto.com/id/2214934348/photo/small-business-owner-of-an-african-print-ankara-fabric-shop-proudly-displaying-different.webp?a=1&b=1&s=612x612&w=0&k=20&c=qOtjeAJVjbC_odEE5B2RQBYS-JnHz-jW0XTz1qKfQR4="
+      alt="Stall cover" />
+    <div class="seller-avatar"><i class="fa fa-store"></i></div>
+  </div>
+
+  <!-- SELLER INFO -->
+  <div class="seller-info-block">
+    <h1 class="stall-name">OLU'S GEMS</h1>
+    <div class="stall-tags">
+      <span class="stall-tag">Handcrafted</span>
+      <span class="stall-tag">Sustainable</span>
+      <span class="stall-tag">Lagos, NG</span>
+    </div>
+    <div class="stall-meta">
+      <span class="stall-rating"><i class="fa fa-star"></i> 4.9 Rating</span>
+      <span class="meta-dot">•</span>
+      <span>1.2K Followers</span>
+    </div>
+    <div class="stall-actions">
+      <button class="follow-btn" id="follow-btn">
+        <i class="fa fa-plus"></i> Follow
+      </button>
+      <button class="share-btn"><i class="fa fa-share-alt"></i></button>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs-bar">
+    <button class="tab-btn active" data-tab="listings">Listings</button>
+    <button class="tab-btn" data-tab="reviews">Reviews</button>
+    <button class="tab-btn" data-tab="about">About</button>
+  </div>
+
+  <!-- LISTINGS TAB -->
+  <div class="tab-content active" id="tab-listings">
+    <div class="spotlight-card">
+      <span class="spotlight-badge"><i class="fa fa-trophy"></i> Vendor Spotlight</span>
+      <p class="spotlight-sub">TOP STALL THIS MONTH</p>
+      <p class="spotlight-body">Olu's Gems has reached over 500 successful trades this month with zero disputes. Experience the best of Lagos.</p>
+      <div class="spotlight-trust">
+        <div class="trust-avatars">
+          <span class="t-avatar">O</span>
+          <span class="t-avatar">T</span>
+          <span class="t-avatar">A</span>
+        </div>
+        <span class="trust-text">Trusted by 2.4k+ shoppers</span>
+      </div>
+      <div class="spotlight-img-wrap">
+        <img class="spotlight-img"
+          src="https://media.istockphoto.com/id/2214934348/photo/small-business-owner-of-an-african-print-ankara-fabric-shop-proudly-displaying-different.webp?a=1&b=1&s=612x612&w=0&k=20&c=qOtjeAJVjbC_odEE5B2RQBYS-JnHz-jW0XTz1qKfQR4="
+          alt="Collection" />
+      </div>
+      <a href="products.html?cat=fashion" class="explore-btn">Explore Collection →</a>
+    </div>
+
+    <div class="available-header">
+      <h3>Available Products</h3>
+      <a href="products.html?cat=fashion" class="view-all">View all</a>
+    </div>
+
+    <div class="products-grid"></div>
+  </div>
+
+  <!-- REVIEWS TAB -->
+  <div class="tab-content" id="tab-reviews">
+    <div class="reviews-list">
+      <div class="review-card">
+        <div class="review-avatar" style="background:#c1440e">O</div>
+        <div>
+          <div class="review-name">Oyinlove R.</div>
+          <div class="review-text">Great quality! I'm amazed by how beautifully packaged everything was. Will definitely buy again.</div>
+          <div class="review-stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-avatar" style="background:#4a6741">T</div>
+        <div>
+          <div class="review-name">Temi G</div>
+          <div class="review-text">Good seller, fair prices. The negotiation process was smooth and stress free.</div>
+          <div class="review-stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-avatar" style="background:#d4a832">A</div>
+        <div>
+          <div class="review-name">Aisha M.</div>
+          <div class="review-text">Authentic handcraft! My Adire silk arrived exactly as described. Highly recommended.</div>
+          <div class="review-stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-avatar" style="background:#2d6a8a">B</div>
+        <div>
+          <div class="review-name">Bolaji K.</div>
+          <div class="review-text">Quick delivery and honest communication. One of the best sellers on AWWJA.</div>
+          <div class="review-stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star" style="opacity:0.3"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT TAB -->
+  <div class="tab-content" id="tab-about">
+    <div class="about-block">
+      <div class="about-card">
+        <i class="fa fa-user-circle about-icon"></i>
+        <div>
+          <div class="about-label">Seller</div>
+          <div class="about-value">Olumide Akinbiyi</div>
+        </div>
+      </div>
+      <div class="about-card">
+        <i class="fa fa-map-marker-alt about-icon"></i>
+        <div>
+          <div class="about-label">Location</div>
+          <div class="about-value">Lagos, Nigeria</div>
+        </div>
+      </div>
+      <div class="about-card">
+        <i class="fa fa-calendar-alt about-icon"></i>
+        <div>
+          <div class="about-label">Member Since</div>
+          <div class="about-value">January 2022</div>
+        </div>
+      </div>
+      <div class="about-card">
+        <i class="fa fa-handshake about-icon"></i>
+        <div>
+          <div class="about-label">Total Trades</div>
+          <div class="about-value">500+ completed • 0 disputes</div>
+        </div>
+      </div>
+      <div class="about-card">
+        <i class="fa fa-tags about-icon"></i>
+        <div>
+          <div class="about-label">Categories</div>
+          <div class="about-value">Handcrafted, Fabrics, Jewelry, Home Decor</div>
+        </div>
+      </div>
+      <div class="about-bio">
+        <h4>About this Stall</h4>
+        <p>Olu's Gems is a Lagos-based stall specialising in authentic handcrafted Nigerian goods — from Adire silk to bronze bead jewelry. Every item is ethically sourced and made to last. We believe in fair prices and honest trading, always.</p>
+      </div>
+      <div class="verified-since">
+        <i class="fa fa-check-circle"></i>
+        <span>Verified Seller Since March 2023</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="homepage.html" class="nav-item">
+      <i class="fa fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#" class="nav-item">
+      <i class="fa fa-search"></i>
+      <span>Search</span>
+    </a>
+    <a href="#" class="nav-item nav-stall">
+      <div class="stall-icon"><i class="fa fa-store"></i></div>
+    </a>
+    <a href="cart.html" class="nav-item">
+      <i class="fa fa-shopping-cart"></i>
+      <span>Cart</span>
+    </a>
+    <a href="profile.html" class="nav-item">
+      <i class="fa fa-user"></i>
+      <span>Profile</span>
+    </a>
+  </nav> 
+  <script src="seller-stall.js"></script>
+</body>
+</html>

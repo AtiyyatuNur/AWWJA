@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verified Sellers - Awwja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="sellers.css">
+</head>
+<body>
+  <!-- TOP NAVIGATION -->
+  <div class="top-nav">
+    <button class="back-btn" id="sellers-back-btn">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <span class="page-title">Verified Sellers</span>
+    <div style="width:36px"></div>
+  </div>
+
+  <div class="search-bar">
+    <i class="fa fa-search"></i>
+    <input type="text" placeholder="Search sellers or categories..." />
+    <button class="filter-btn"><i class="fa fa-sliders-h"></i></button>
+  </div>
+
+  <!-- FILTER CHIPS -->
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-chip active" data-category="all">All</button>
+    <button class="filter-chip" data-category="fashion">Fashion</button>
+    <button class="filter-chip" data-category="beauty">Beauty</button>
+    <button class="filter-chip" data-category="gadgets">Gadgets</button>
+    <button class="filter-chip" data-category="games">Games</button>
+    <button class="filter-chip" data-category="sports">Sports</button>
+  </div>
+
+  <!-- RESULTS COUNT -->
+  <p class="results-info">
+    <span id="results-count">0</span> verified sellers found
+  </p>
+
+  <!-- SELLERS LIST -->
+  <div class="sellers-list" id="sellers-list">
+
+    <div class="seller-card" data-category="fashion" data-href="seller-stall.html?seller=olu-gems">
+      <div class="card-top">
+        <div class="store-thumb bg-green">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Olu's Gems</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Olumide Akinbiyi • Lagos, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img"
+        src="https://media.istockphoto.com/id/2214934348/photo/small-business-owner-of-an-african-print-ankara-fabric-shop-proudly-displaying-different.webp?a=1&b=1&s=612x612&w=0&k=20&c=qOtjeAJVjbC_odEE5B2RQBYS-JnHz-jW0XTz1qKfQR4="
+        alt="Olu's Gems" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.9</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Lagos</span>
+        <a href="seller-stall.html?seller=olu-gems" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="fashion" data-href="seller-stall.html?seller=rickieluxe-accessories">
+      <div class="card-top">
+        <div class="store-thumb bg-green">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Rickieluxe Accessories</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Arike • Ogun, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img"
+        src="https://media.istockphoto.com/id/1417313568/photo/golden-and-silver-rings-on-a-window-of-a-jewelry-store-engage-celebration-concept.jpg?s=612x612&w=0&k=20&c=7Md1MKrMiuSv_-mSKHoIV2Z03wnMsgDePvm2XgO8C04="
+        alt="Rickieluxe Accessories" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.7</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Ogun</span>
+        <a href="seller-stall.html?seller=rickieluxe-accessories" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="fashion" data-href="seller-stall.html?seller=luxe-bags">
+      <div class="card-top">
+        <div class="store-thumb bg-green">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Luxe Bags</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Ifeoma S. • Abuja, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img"
+        src="https://plus.unsplash.com/premium_photo-1680392544041-d89413b561ce?w=600"
+        alt="Luxe Bags" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.8</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Abuja</span>
+        <a href="seller-stall.html?seller=luxe-bags" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="sports" data-href="seller-stall.html?seller=sport-house">
+      <div class="card-top">
+        <div class="store-thumb bg-orange">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Sport House</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Funmi Oloye • Ogun, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img"
+        src="https://media.istockphoto.com/id/1341946757/photo/outdoor-shop.jpg?s=612x612&w=0&k=20&c=_WI0U405CZ7rOuWqgtQWWCQlBbIdHBMUNbADRmedo_U="
+        alt="Sport House" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.8</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Ogun</span>
+        <a href="seller-stall.html?seller=sport-house" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="beauty" data-href="seller-stall.html?seller=aishas-glow">
+      <div class="card-top">
+        <div class="store-thumb bg-orange">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Aisha’s Glow</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Aisha Mohammed • Abuja, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img"
+        src="https://media.istockphoto.com/id/489123533/photo/retail-store-cosmetic-shelves.jpg?s=612x612&w=0&k=20&c=NahJQB4QtN_XYhxRlgwyOZRyWRBmfWTEeqFKcAexmEs="
+        alt="Aisha’s Glow" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.8</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Abuja</span>
+        <a href="seller-stall.html?seller=aishas-glow" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="gadgets" data-href="seller-stall.html?seller=tech-haven">
+      <div class="card-top">
+        <div class="store-thumb bg-blue">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Tech Haven</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Emeka Okafor • PH, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img"
+        src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500&q=80"
+        alt="Tech Haven" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.7</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Port Harcourt</span>
+        <a href="seller-stall.html?seller=tech-haven" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="fashion" data-href="seller-stall.html?seller=urban-thread">
+      <div class="card-top">
+        <div class="store-thumb bg-brown">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Urban Thread</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By David K. • Lagos, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img"
+        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&q=80"
+        alt="Urban Thread" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.9</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Lagos</span>
+        <a href="seller-stall.html?seller=urban-thread" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="games" data-href="seller-stall.html?seller=game-house">
+      <div class="card-top">
+        <div class="store-thumb bg-blue">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Game House</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Seyi A. • Lagos, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=80" alt="Game House" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.9</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Lagos</span>
+        <a href="seller-stall.html?seller=game-house" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="games" data-href="seller-stall.html?seller=pixel-play">
+      <div class="card-top">
+        <div class="store-thumb bg-blue">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Pixel Play</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Tunde Bello • Ibadan, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=80" alt="Pixel Play" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.8</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Ibadan</span>
+        <a href="seller-stall.html?seller=pixel-play" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="games" data-href="seller-stall.html?seller=arcade-hub">
+      <div class="card-top">
+        <div class="store-thumb bg-blue">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Arcade Hub</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Kelechi Nwosu • Enugu, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=500&q=80" alt="Arcade Hub" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.7</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Enugu</span>
+        <a href="seller-stall.html?seller=arcade-hub" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="games" data-href="seller-stall.html?seller=quest-corner">
+      <div class="card-top">
+        <div class="store-thumb bg-blue">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Quest Corner</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Ada Okafor • Kano, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=80" alt="Quest Corner" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.8</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Kano</span>
+        <a href="seller-stall.html?seller=quest-corner" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="sports" data-href="seller-stall.html?seller=sprint-street">
+      <div class="card-top">
+        <div class="store-thumb bg-orange">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Sneakers Spot</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Bayo T. • Lagos, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1609188944094-394637c26769?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U05FQUtFUlMlMjBzdG9yZXxlbnwwfHwwfHx8MA%3D%3D" alt="Sneakers Spot" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.7</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Lagos</span>
+        <a href="seller-stall.html?seller=sneakers-spot" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="sports" data-href="seller-stall.html?seller=active-motion">
+      <div class="card-top">
+        <div class="store-thumb bg-orange">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Active Motion</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Chika Eze • Port Harcourt, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&q=80" alt="Active Motion" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.6</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Port Harcourt</span>
+        <a href="seller-stall.html?seller=active-motion" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+  
+    <div class="seller-card" data-category="beauty" data-href="seller-stall.html?seller=radiant-roots">
+      <div class="card-top">
+        <div class="store-thumb bg-orange">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Radiant Roots</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Amara Nwosu • Enugu, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80" alt="Radiant Roots" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.9</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Enugu</span>
+        <a href="seller-stall.html?seller=radiant-roots" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="gadgets" data-href="seller-stall.html?seller=nova-tech">
+      <div class="card-top">
+        <div class="store-thumb bg-blue">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Nova Tech</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Daniel Cole • Lagos, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80" alt="Nova Tech" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.7</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Lagos</span>
+        <a href="seller-stall.html?seller=nova-tech" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+    <div class="seller-card" data-category="gadgets" data-href="seller-stall.html?seller=smart-hub">
+      <div class="card-top">
+        <div class="store-thumb bg-blue">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="card-top-info">
+          <div class="seller-name-row">
+            <h4>Smart Hub</h4>
+            <span class="verified-badge"><i class="fa fa-check"></i></span>
+          </div>
+          <p>By Joy Eke • Abuja, NG</p>
+        </div>
+      </div>
+      <img class="seller-full-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80" alt="Smart Hub" />
+      <div class="card-bottom">
+        <div class="seller-rating"><i class="fa fa-star"></i> 4.8</div>
+        <span class="seller-location"><i class="fa fa-map-marker-alt"></i> Abuja</span>
+        <a href="seller-stall.html?seller=smart-hub" class="browse-stall">BROWSE STALL ›</a>
+      </div>
+    </div>
+
+  </div>
+  <script src="sellers.js"></script>
+</body>
+</html>

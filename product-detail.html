@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+    <header class="top-header detail-header">
+        <button id="back-btn" class="icon-btn-clear"><i class="fa fa-arrow-left"></i></button>
+        <button class="icon-btn-clear"><i class="fa fa-heart"></i></button>
+    </header>
+    <div class="gallery">
+        <img src="https://plus.unsplash.com/premium_photo-1680392544041-d89413b561ce?w=600" class="gallery-main" />
+        <div class="gallery-thumbs"></div>
+    </div>
+
+    <div class="detail-container">
+        <h2 class="detail-title">Designer Ankara Bag</h2>
+        <h3 class="detail-price">₦85,000</h3>
+
+        <!-- SELLER SUMMARY -->
+        <div class="seller-preview-card" id="seller-preview">
+            <div class="seller-preview-avatar"><i class="fa fa-store"></i></div>
+            <div class="seller-preview-info">
+                <h4>Olu's Gems</h4>
+                <p><i class="fa fa-star" style="color:var(--gold)"></i> 4.9 • 1.2K Followers</p>
+            </div>
+            <div class="seller-preview-actions">
+                <button class="follow-btn-sm">Follow</button>
+                <button class="icon-btn-sm share-trigger"><i class="fa fa-share-alt"></i></button>
+            </div>
+        </div>
+
+        <p class="negotiation-hint">
+            <i class="fa fa-info-circle"></i> Tap <strong>last price?</strong> to negotiate with seller.
+        </p>
+
+        <div id="action-buttons" class="detail-actions">
+            <button class="secondary-btn flex-1" id="negotiate-btn">Last Price?</button>
+            <button class="primary-btn flex-1-5" id="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+
+        <div id="neg-box" class="negotiation-box" style="display:none">
+          <p class="neg-title"><i class="fa fa-comments"></i> Price Negotiation</p>
+
+          <div class="neg-list" id="neg-list">
+          <!-- history items injected by JS -->
+        </div>
+
+       <div class="neg-actions" id="neg-actions">
+          <button class="primary-btn neg-accept" id="accept-offer-btn">✓ Accept</button>
+          <button class="secondary-btn" id="counter-offer-btn">↩ Counter</button>
+          <button class="decline-btn" id="decline-offer-btn">✕ Decline</button>
+        </div>
+
+        <div class="counter-form" id="counter-form" style="display:none">
+           <input type="number" id="counter-input" placeholder="Enter your price e.g 60000" />
+           <button class="primary-btn" id="send-counter-btn">Send</button>
+        </div>
+    </div>
+
+        <!-- <div id="neg-box" class="negotiation-box">
+            <p class="neg-text">Seller offered: <strong>₦75,000</strong></p>
+            <div class="neg-actions">
+                <button class="primary-btn neg-accept" id="accept-offer-btn">Accept Offer</button>
+                <button class="secondary-btn neg-decline" id="decline-offer-btn">Decline</button>
+            </div>
+        </div> -->
+
+        <div id="deal-closed" class="deal-status">
+            <div class="status-icon"><i class="fa fa-check-circle"></i></div>
+            <h3>Deal Closed!</h3>
+            <button class="secondary-btn mt-15" id="continue-shopping-btn">Continue Shopping</button>
+        </div>
+
+        <div class="mt-30">
+            <h4>Leave a Review</h4>
+            <textarea placeholder="Tell others about this product..." class="review-input"></textarea>
+        </div>
+
+        <!-- <div class="my-40">
+            <h4>You might also like</h4>
+            <div class="related-list">
+                <div class="related-card" onclick="location.href='product-detail.html'">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200" class="related-img" />
+                    <p class="related-name">Red Sneakers</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="product-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header class="top-header checkout-header">
+        <button class="back-btn" onclick="location.href='cart.html'"><i class="fa fa-arrow-left"></i></button>
+        <h3 class="checkout-title">Checkout</h3>
+    </header>
+
+    <div class="checkout-progress">
+        <div class="step completed"><i class="fa fa-check"></i></div>
+        <div class="step-line filled"></div>
+        <div class="step active">2</div>
+        <div class="step-line"></div>
+        <div class="step">3</div>
+    </div>
+
+    <div class="checkout-content">
+        <div class="section-block bg-white p-16 r-12 mb-20">
+            <h4 class="section-heading">Shipping To:</h4>
+            <div class="form-group">
+                <label>LOCATION / CITY</label>
+                <input type="text" placeholder="e.g. Lagos Island" />
+            </div>
+            <div class="form-group">
+                <label>STREET ADDRESS</label>
+                <input type="text" placeholder="House no, Street name" />
+            </div>
+        </div>
+
+        <div class="section-block bg-white p-16 r-12 mb-20">
+            <h4 class="section-heading">Order Summary</h4>
+            <div class="summary-row">
+                <span id="subtotal-label">Subtotal</span>
+                <span id="subtotal-amount">₦0</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping Fee</span>
+                <span>₦5,000</span>
+            </div>
+            <hr class="summary-divider">
+            <div class="summary-total">
+                <span>Total</span>
+                <span class="total-price" id="total-amount">₦0</span>
+            </div>
+        </div>
+
+        <div class="section-block mb-30">
+            <h4 class="section-heading">Payment Method</h4>
+            <label class="payment-option">
+                <input type="radio" name="pay" value="card" class="accent-green">
+                <span class="text-14">Debit / Credit Card</span>
+                <i class="fa fa-credit-card payment-icon"></i>
+            </label>
+            <label class="payment-option">
+                <input type="radio" name="pay" value="bank" class="accent-green">
+                <span class="text-14">Bank Transfer</span>
+                <i class="fa fa-university payment-icon"></i>
+            </label>
+
+            <div class="payment-details card-fields" id="card-fields">
+                <div class="form-group">
+                    <label>CARD NUMBER</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" />
+                </div>
+                <div class="card-grid">
+                    <div class="form-group">
+                        <label>EXPIRY DATE</label>
+                        <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" />
+                    </div>
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="text" id="card-cvv" placeholder="123" maxlength="4" />
+                    </div>
+                </div>
+                <p class="card-note">Enter the card number, expiration date, and CVV (last three digits at the back).</p>
+            </div>
+            <div class="payment-details bank-fields" id="bank-fields">
+                <div class="form-group">
+                    <label>ACCOUNT NAME</label>
+                    <input type="text" id="bank-account-name" value="Omoshalewa Ajoke" readonly/>
+                </div>
+                <div class="form-group">
+                    <label>ACCOUNT NUMBER</label>
+                    <input type="text" id="bank-account-number" value="8117928430" readonly/>
+                </div>
+                 <div class="form-group">
+                    <label>BANK NAME</label>
+                    <input type="text" id="bank-name" value="Access Bank" readonly/>
+                </div>
+                <p class="card-note">Transfer your payment to the account above, then click Pay Now to confirm.</p>
+            </div>
+        </div>
+        <button class="primary-btn disabled" id="pay-now-btn" disabled>Pay Now</button>
+    </div> 
+    <script src="checkout.js"></script>
+</body>
+</html>

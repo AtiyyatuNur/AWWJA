@@ -1,0 +1,266 @@
+.profile-header {
+    background: var(--green);
+    color: white;
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.profile-avatar-wrap {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: 0 auto 15px;
+    overflow: hidden;
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 22px;
+}
+
+.profile-email {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.profile-links-section {
+    padding: 20px 16px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.profile-link i:first-child {
+    width: 20px;
+    color: var(--green);
+}
+
+.profile-link i:last-child {
+    margin-left: auto;
+    color: #ccc;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    color: #e74c3c;
+    border-color: #fadbd8;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.modal-overlay.active {
+    display: block;
+}
+
+.profile-modal {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f5f5f5;
+    border-radius: 20px 20px 0 0;
+    z-index: 101;
+    max-height: 85vh;
+    overflow-y: auto;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.profile-modal.active {
+    display: block;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px 10px;
+    background: white;
+    border-radius: 20px 20px 0 0;
+    position: sticky;
+    top: 0;
+}
+
+.modal-header h3 {
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px 16px 100px;
+}
+
+.avatar-upload-wrap {
+    position: relative;
+    width: 90px;
+    margin: 0 auto 24px;
+}
+
+.modal-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--green);
+}
+
+.avatar-edit-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--green);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    background: white;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--green);
+}
+
+.password-wrap {
+    position: relative;
+}
+
+.password-wrap input {
+    padding-right: 44px;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    cursor: pointer;
+}
+
+.save-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px;
+}
+
+/* ── My Orders ── */
+.order-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.order-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.order-id {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.order-status {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background: var(--green);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.order-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.order-date i, .order-total i {
+    margin-right: 6px;
+    color: var(--green);
+}
+
+.order-total {
+    font-size: 14px;
+    color: var(--dark);
+}
+
+.order-total strong {
+    color: var(--green);
+}
+
+.empty-orders {
+    text-align: center;
+    padding: 40px 20px;
+    color: #aaa;
+}
+
+.empty-orders i {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.empty-orders p {
+    font-size: 14px;
+}

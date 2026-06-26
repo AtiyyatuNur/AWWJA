@@ -1,0 +1,193 @@
+/* General styles for the checkout page */
+body {
+    background-color: #f8f8f8; /* Light background for the page */
+    font-family: 'Inter', 'sans-serif', serif;
+    color: #333;
+}
+
+/* Header Styling */
+.checkout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px; /* Adjust padding as needed */
+    background-color: var(--white); /* Assuming a white background for headers */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.checkout-header .header-left {
+    /* This div wraps the back button to give it a consistent size/position */
+    width: 36px; /* Match the spacer on the right */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.checkout-header .back-btn {
+    background: none;
+    border: none;
+    color: var(--dark); /* Assuming dark text color for header elements */
+    font-size: 20px; /* Slightly larger icon for better tap target */
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; /* Consistent size */
+    height: 36px; /* Consistent size */
+}
+
+.checkout-header .checkout-title {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 18px; /* Adjust font size as per design */
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.checkout-header .header-right-spacer {
+    width: 36px; /* Same width as the back-btn */
+}
+
+/* Ensure the progress bar is below the sticky header */
+.checkout-progress {
+    margin-top: 10px; /* Add some space below the header */
+}
+
+/* Styles for the checkout content */
+.checkout-content {
+    padding: 20px;
+}
+
+.section-block {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.summary-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.total-price {
+    color: var(--orange); /* Assuming orange for total price highlight */
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+    accent-color: var(--green);
+}
+
+.payment-option .payment-icon {
+    margin-left: auto;
+    color: var(--text-muted);
+    font-size: 18px;
+}
+
+.card-fields,
+.bank-fields {
+    display: none;
+    margin-top: 16px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 12px;
+}
+
+.card-grid .form-group {
+    flex: 1;
+}
+
+.card-note {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn.disabled,
+.primary-btn:disabled {
+    background-color: #c8d6c3;
+    color: #7f8c7a;
+    cursor: not-allowed;
+}
+
+.mt-15 { margin-top: 15px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.p-16 { padding: 16px; }
+.r-12 { border-radius: 12px; }
+.bg-white { background-color: var(--white); }
+.text-14 { font-size: 14px; }
+.accent-green { accent-color: var(--green); }

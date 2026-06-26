@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awwja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="menu-header">
+      <div class="nav-logo-placeholder">
+        <img src="awwja-logo.png" alt="awwja-logo" />
+      </div>
+      <button class="menu-close" onclick="closeMenu()">
+        <span class="material-icons">close</span>
+      </button>
+    </div>
+    <nav class="menu-links">
+      <a href="#">
+        <i class="fa-solid fa-house menu-icon"></i> Home
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-star menu-icon"></i> Features
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-users menu-icon"></i> About us
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-envelope menu-icon"></i> Contact
+      </a>
+    </nav>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo-placeholder">
+      <img src="awwja-logo.png" alt="awwja-logo" />
+    </div>
+    <div class="hamburger" onclick="openMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-placeholder"></div>
+    <img src="hero-image-mobile.png" alt="" class="hero-bg" />
+
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fa-solid fa-fire"></i>Bargain to the last price</div>
+      <div class="hero-title">
+        <h1 class="hero-title">Don't just shop.<br>Negotiate.</h1>
+      </div>
+      <div class="hero-cta-row">
+         <a href="onboarding.html" class="btn-primary">Get Started</a>
+        <button class="btn-outline">See how it works</button>
+      </div>
+    </div>
+
+    <div class="last-price-bubble">Last price?</div>
+
+    <!-- Social proof with orange background shape -->
+    <div class="hero-social-proof-wrap">
+      <div class="social-proof-orange-bg"></div>
+      <div class="hero-social-proof">
+        <div class="avatars">
+          <div class="avatar"></div>
+          <div class="avatar" style="background:#8B6914;"></div>
+          <div class="avatar" style="background:#C5521A;"></div>
+          <div class="avatar-count">2k</div>
+        </div>
+        <div class="proof-text">
+          <strong>Trusted by</strong>
+          thousands of smart shoppers
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- WAVE BREAK -->
+  <div class="hero-wave-wrap">
+    <svg viewBox="0 0 390 40" xmlns="http://www.w3.org/2000/svg" class="wave" preserveAspectRatio="none">
+      <path d="M0,20 C80,40 160,0 240,20 C310,38 360,10 390,20 L390,40 L0,40 Z" fill="#F5F0E8"/>
+    </svg>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="section-label-btn">How It Works</div>
+    <h2 class="section-title">Bargain in 3 easy steps</h2>
+    <p class="section-sub">Just like a market, now on your phone</p>
+
+    <div class="step">
+      <div class="step-mockup-wrapper">
+        <div class="step-mockup-placeholder">
+          <img src="first-img.png" alt="Browse products" class="step-mockup" />
+        </div>
+        <div class="step-number-badge">1</div>
+      </div>
+      <div class="step-text">
+        <div class="step-title">Find something you like</div>
+        <p class="step-desc">Browse products from verified sellers across different categories</p>
+      </div>
+    </div>
+
+      <div class="step-arrow">
+        <span class="material-icons">↓</span>
+      </div>
+
+
+    <div class="step">
+      <div class="step-mockup-wrapper">
+        <div class="step-mockup-placeholder">
+          <img src="second-img.png" alt="Negotiate" class="step-mockup" />
+        </div>
+        <div class="step-number-badge">2</div>
+      </div>
+      <div class="step-text">
+        <div class="step-title">Ask "Last price?"</div>
+        <p class="step-desc">Chat with seller and make an offer that works for you.</p>
+      </div>
+    </div>
+
+    <div class="step-arrow">
+        <span class="material-icons">↓</span>
+      </div>
+
+    <div class="step">
+      <div class="step-mockup-wrapper">
+        <div class="step-mockup-placeholder">
+          <img src="third-img.png" alt="Close the deal" class="step-mockup" />
+        </div>
+        <div class="step-number-badge">3</div>
+      </div>
+      <div class="step-text">
+        <div class="step-title">Close the deal!</div>
+        <p class="step-desc">Once you both agree, pay securely and we'll handle the rest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY AWWJA -->
+  <section class="why-section">
+    <div class="why-btn">Why Awwja?</div>
+    <h2 class="why-title">Everything you need for a better shopping experience</h2>
+
+    <div class="feature-card">
+      <i class="fas fa-comments"></i>
+      <div class="feature-title">Real-time negotiation</div>
+      <p class="feature-desc">No fixed prices. You're in control of the final price.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fa-solid fa-check"></i>
+      <div class="feature-title">Verified sellers</div>
+      <p class="feature-desc">Every seller is verified to ensure you get genuine products and great service.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fa-solid fa-shield"></i>
+      <div class="feature-title">Secure payments</div>
+      <p class="feature-desc">Your payments are safe with our escrow option. Pay only when you're satisfied.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fa-brands fa-yelp"></i>
+      <div class="feature-title">Smart recommendations</div>
+      <p class="feature-desc">Get personalized recommendations based on your preferences.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testimonials-header">
+      From the Awwja Community <span class="material-icons" style="color:#e74c3c; font-size:16px;"><i class="fa-solid fa-heart"></i></span>
+    </div>
+
+    <div class="testimonial-card">
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">I got this bag for 18k. The seller started from 25k. Awwja is the real mvp!</p>
+      <div class="testimonial-author">– Tolu A.</div>
+    </div>
+    
+    
+     
+    <div class="testimonial-nav">
+      <button style="font-size:16px;">←</button>
+      <button style="font-size:16px;"> →</button>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <span class="cta-eyebrow">The Awwja experience</span>
+    <h2 class="cta-title">Built like the market.<br>Designed for you.</h2>
+    <p class="cta-sub">From browsing to bargaining,<br> everything you need in one app</p>
+
+    <div class="cta-mockup-placeholder">
+      <img src="cta-img.png" class="cta-mockup-img" alt="App screen" />
+      <div class="mockup-ph"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="footer-cta">
+    <h2 class="footer-cta-title">The first price is <br> rarely the best one.</h2>
+    <p class="footer-cta-sub">Join thousands of smart <br>shoppers bargaining on Awwja.</p>
+    <!-- Links to onboarding page -->
+    <a href="onboarding.html" class="btn-dark">Enter the market<i class="fa-solid fa-arrow-right"></i></i></a>
+  </section>
+
+  <!-- COMING SOON + FOOTER -->
+  <section class="coming-soon">
+    <div class="coming-logo-placeholder">
+      <img src="awwja-logo.png" height="56" alt="Awwja" />
+    </div>
+    <div class="coming-soon-badge">COMING SOON</div>
+    <p class="coming-soon-text">For people who don't take the first price. Negotiate, buy with confidence, and save money on every purchase — just like the real market.</p>
+
+    <!-- Social icons: TikTok, Instagram, LinkedIn, Facebook -->
+    <div class="social-icons">
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@awwja_oja?_r=1&_t=ZS-96eYBzj3p1o" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/awwja_oja?igsh=aXJ6a3pnb29zbW05" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+      <!-- LinkedIn -->
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/g/1DAQBWYko8/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+
+    </div>
+    <div class="social-handle">@awwja_oja</div>
+  </section>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-links">
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#">How It Works</a>
+      <a href="#">Features</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    © 2026 AWWJA. All rights reserved.<br>
+    Built for every market. Built for all Nigeria.
+  </div>
+    <script src="script.js" ></script>
+</body>
+</html>
